@@ -7,6 +7,7 @@
 from bs4 import BeautifulSoup
 from datetime import datetime
 import requests
+import calendar
 import pandas as pd
 import re
 
@@ -17,44 +18,49 @@ RESULT_PATH = '/Users/atec/Desktop/hansol_crawling/'
 RESULT_FILE_NAME = 'ranking_news_title'
 now = datetime.now()
 
-# 크롤링
-def crawler(s_date, e_date):
-    s_from = s_date.replace(".", "")
-    e_to = e_date.replace(".", "")
+def main():
     dataCount = 0
+    searchDate = 0
+    file = open(RESULT_PATH + RESULT_FILE_NAME, 'w')
 
-    url = "https://news.naver.com/main/ranking/popularDay.nhn?rankingType=popular_day&sectionId=103&date=20190424"
-    response = requests.get(url)
-    html = response.text
-    soup = BeautifulSoup(html, 'html.parser') # print(soup)
-    data = soup.select("div[class=ranking_thumb] > a")
-    #data = soup.select("div[id=ranking_103] > ul > li > a")
-    # print(" -----------------S RawData S -----------------")
-    # print(data)
-    # print(" -----------------E RawData E -----------------\n\n\n\n")
+    for mon in range(1, 13):
+        strMon = ""
+        strDay = ""
+        if (len(str(mon)) == 1):
+            strMon = "0" + str(mon)
+        else:
+            strMon = str(mon)
 
-    # title.get('속성이름'), title['속성이름'] : https://beomi.github.io/2017/01/20/HowToMakeWebCrawler/
-    newTitleList = []
-    file = open(RESULT_PATH+RESULT_FILE_NAME, 'w')
-    for data_list in data:
-        # newTitleList.append(data_list.get("title"))
-        print(data_list.get("title"))
-        file.write(data_list.get("title")+"\n")
-        dataCount += 1
+        endDay = calendar.monthrange(2018, mon)[1]
+        print("------------------------------------------")
+        print(strMon + "월의 마지막 날: " + str(endDay))
+        print("------------------------------------------")
+        for day in range(1, endDay + 1):
+            if (len(str(day)) == 1):
+                strDay = "0" + str(day)
+            else:
+                strDay = str(day)
 
+            searchDate = "2018" + strMon + strDay
+            url = "https://news.naver.com/main/ranking/popularDay.nhn?rankingType=popular_day&sectionId=103&date=" + str(searchDate)
+
+            response = requests.get(url)
+            html = response.text
+            soup = BeautifulSoup(html, 'html.parser')  # print(soup)
+
+            # title.get('속성이름'), title['속성이름'] : https://beomi.github.io/2017/01/20/HowToMakeWebCrawler/
+            data = soup.select("div[class=ranking_thumb] > a")
+
+            for data_list in data:
+                # newTitleList.append(data_list.get("title"))
+                print(data_list.get("title"))
+                file.write(data_list.get("title") + "\n")
+                dataCount += 1
     file.close()
 
     print("\n--------------------- 생활/문화 카테고리 뉴스 크롤링 완료 ---------------------")
-    print("크롤링 날짜 : "+s_date+" ~ "+e_date)
     print("크롤링된 제목 수 : "+ str(dataCount))
-    print("하루에 30개 * 30일 = 900개 * 12개월 = 10,800개")
     print("----------------------------------------------------------------------")
-
-def main():
-    sort = '1' # 관련도순=0  최신순=1  오래된순=2
-    s_date = "2018.01.01"
-    e_date = "2019.01.31"
-    crawler(s_date, e_date)
 
 # 함수실행
 main()
