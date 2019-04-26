@@ -14,14 +14,14 @@ import re
 
 # 각 크롤링 결과 저장하기 위한 리스트 선언
 contents_text = []
-RESULT_PATH = '/Users/atec/Desktop/hansol_crawling/'
-RESULT_FILE_NAME = 'ranking_news_title'
+PROJECT_PATH = '/Users/atec/Desktop/hansol_crawling/'
+RESULT_FILE_NAME = 'ranking_news_title.txt'
 now = datetime.now()
 
 def main():
     dataCount = 0
     searchDate = 0
-    file = open(RESULT_PATH + RESULT_FILE_NAME, 'w')
+    file = open(PROJECT_PATH + RESULT_FILE_NAME, 'w')
 
     for mon in range(1, 13):
         strMon = ""
