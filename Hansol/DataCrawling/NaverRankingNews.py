@@ -6,7 +6,6 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
 from datetime import datetime
-from openpyxl import Workbook
 import requests
 import pandas as pd
 import re
@@ -18,18 +17,10 @@ RESULT_PATH = '/Users/atec/Desktop/hansol_crawling/'
 RESULT_FILE_NAME = 'ranking_news_title'
 now = datetime.now()
 
-# 내용 정제화 함수
-def contents_cleansing(contents):
-   first_cleansing_contents = re.sub('<dl>.*?</a> </div> </dd> <dd>', '', str(contents)).strip()  # 앞에 필요없는 부분 제거
-   second_cleansing_contents = re.sub('<ul class="relation_lst">.*?</dd>', '', first_cleansing_contents).strip()  # 뒤에 필요없는 부분 제거 (새끼 기사)
-   third_cleansing_contents = re.sub('<.+?>', '', second_cleansing_contents).strip()
-   contents_text.append(third_cleansing_contents)
-
 # 크롤링
 def crawler(s_date, e_date):
     s_from = s_date.replace(".", "")
     e_to = e_date.replace(".", "")
-    page = 1
     dataCount = 0
 
     url = "https://news.naver.com/main/ranking/popularDay.nhn?rankingType=popular_day&sectionId=103&date=20190424"
