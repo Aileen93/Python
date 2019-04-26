@@ -71,56 +71,47 @@ def crawler(maxpage, query, sort, s_date, e_date):
         # 신문사 추출
         source_lists = soup.select('._sp_each_source')
         for source_list in source_lists:
+            source_text.append(source_list.text)  # 신문사
 
-            # 일간지(매일일보, 경향신문, 조선일보),경제IT(매일경제,블로터, 한국금융신문,한국경제, 해럴드경제)
-            print(source_list.text)
-            if(source_list.text == '매일일보'
-                or source_list.text == '경향신문'
-                or source_list.text == '매일경제'
-                or source_list.text == '블로터'
-                or source_list.text == '한국금융신문'
-                or source_list.text == '한국경제'
-                or source_list.text == '헤럴드경제'):
+        # <a>태그에서 제목과 링크주소 추출
+        atags = soup.select('._sp_each_title')
+        for atag in atags:
+            title_text.append(atag.text)  # 제목
+            link_text.append(atag['href'])  # 링크주소
 
-                source_text.append(source_list.text)  # 신문사
+        # 날짜 추출
+        date_lists = soup.select('.txt_inline')
+        for date_list in date_lists:
+            test = date_list.text
+            date_cleansing(test)  # 날짜 정제 함수사용
 
-                # <a>태그에서 제목과 링크주소 추출
-                atags = soup.select('._sp_each_title')
-                for atag in atags:
-                    title_text.append(atag.text)  # 제목
-                    link_text.append(atag['href'])  # 링크주소
-                    print(atag.text)
+        # 본문요약본
+        #contents_lists = soup.select('ul.type01 dl')
+        #for contents_list in contents_lists:
+        #    contents_cleansing(contents_list)  # 본문요약 정제화
 
-                # 날짜 추출
-                date_lists = soup.select('.txt_inline')
-                for date_list in date_lists:
-                    test = date_list.text
-                    date_cleansing(test)  # 날짜 정제 함수사용
+        # 모든 리스트 딕셔너리형태로 저장
+        result = {"source": source_text, "title": title_text, "link": link_text}
+        print(result)
 
-                # 본문요약본
-                contents_lists = soup.select('ul.type01 dl')
-                for contents_list in contents_lists:
-                    contents_cleansing(contents_list)  # 본문요약 정제화
-
-                # 모든 리스트 딕셔너리형태로 저장
-                result = {"source": source_text, "title": title_text, "contents": contents_text, "link": link_text}
-                df = pd.DataFrame(result)  # df로 변환
-                page += 10
+        df = pd.DataFrame(result)  # df로 변환
+        page += 10
 
         # 새로 만들 파일이름 지정
-        outputFileName = "hansol_crawling_org.xlsx"
+        outputFileName = 'hansol_crawling_org.xlsx'
         df.to_excel(RESULT_PATH + outputFileName, sheet_name='sheet1')
-        print("크롤링 완료")
 
 
 def main():
-    maxpage = 20 #input("최대 크롤링할 페이지 수 입력하시오: ")
-    query = '한솔제지 -주식 -종목 -배당 -보통주'
+    maxpage = 9999 #input("최대 크롤링할 페이지 수 입력하시오: ")
+    query = '학생'
     sort = '1' # 관련도순=0  최신순=1  오래된순=2
     s_date = "2018.01.01"
-    e_date = "2018.01.31"
+    e_date = "2019.01.31"
 
     crawler(maxpage, query, sort, s_date, e_date)
 
 # 함수실행
 main()
+
+#한솔제지 -주식 -종목 -배당 -보통주
