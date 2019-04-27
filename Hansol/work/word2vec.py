@@ -15,8 +15,8 @@ from konlpy.tag import Okt; okt = Okt()
 # model = gensim.models.Word2Vec(**config)
 
 PROJECT_PATH = '/Users/atec/Desktop/hansol_crawling/'
-CLEAN_TITLE_FILE = 'ranking_news_new.txt'
-CORPUS_FILE = 'corpus.txt'
+CLEAN_TITLE_FILE = 'cleanRankingNews_merge.txt'
+# CORPUS_FILE = 'corpus.txt'
 
 def main():
     try:
@@ -24,7 +24,7 @@ def main():
         sentenceArray = []
         for sent in cleanData:
             #['불법', '차로', '안전', '센터', '마비', '새해', '첫날', '양심', '불량']
-            tokens_sent = okt.nouns(sent.replace('\n',''))
+            tokens_sent = okt.nouns(sent.replace('\n',''))  #명사만 가지고 실행한 결과
             for x in tokens_sent:
                 if len(x) > 1:
                     sentenceArray.append(tokens_sent)

@@ -13,7 +13,8 @@ from bs4 import BeautifulSoup
 # 각 크롤링 결과 저장하기 위한 리스트 선언
 contents_text = []
 PROJECT_PATH = '/Users/atec/Desktop/hansol_crawling/'
-RESULT_FILE_NAME = 'ranking_news_title.txt'
+target_year = '2018'
+RESULT_FILE_NAME = 'rankingNews_org'+target_year+'.txt'
 now = datetime.now()
 
 def main():
@@ -22,14 +23,14 @@ def main():
     file = open(PROJECT_PATH + RESULT_FILE_NAME, 'w')
 
     for mon in range(1, 13):
-        strMon = ""
-        strDay = ""
+        strMon = ''
+        strDay = ''
         if (len(str(mon)) == 1):
             strMon = "0" + str(mon)
         else:
             strMon = str(mon)
 
-        endDay = calendar.monthrange(2018, mon)[1]
+        endDay = calendar.monthrange(int(target_year), mon)[1]
         print("------------------------------------------")
         print(strMon + "월의 마지막 날: " + str(endDay))
         print("------------------------------------------")
@@ -39,7 +40,7 @@ def main():
             else:
                 strDay = str(day)
 
-            searchDate = "2018" + strMon + strDay
+            searchDate = target_year + strMon + strDay
             url = "https://news.naver.com/main/ranking/popularDay.nhn?rankingType=popular_day&sectionId=103&date=" + str(searchDate)
 
             response = requests.get(url)
