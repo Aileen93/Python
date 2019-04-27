@@ -6,13 +6,12 @@
 # 한솔제지 -주식 -종목
 # ---------------------
 # -*- coding: utf-8 -*-
-from bs4 import BeautifulSoup
-from datetime import datetime
-from openpyxl import Workbook
-import requests
-import pandas as pd
 import re
+from datetime import datetime
 
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 < naver 뉴스 검색시 리스트 크롤링하는 프로그램 > _select사용

@@ -4,13 +4,11 @@
 #https://news.naver.com/main/ranking/popularDay.nhn?rankingType=popular_day&sectionId=103&date=20190424
 # ---------------------
 # -*- coding: utf-8 -*-
-from bs4 import BeautifulSoup
-from datetime import datetime
-import requests
 import calendar
-import pandas as pd
-import re
+from datetime import datetime
 
+import requests
+from bs4 import BeautifulSoup
 
 # 각 크롤링 결과 저장하기 위한 리스트 선언
 contents_text = []
