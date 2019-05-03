@@ -6,6 +6,7 @@ import re
 import gensim
 from nltk.tokenize import word_tokenize
 from nltk import pos_tag
+from datetime import datetime
 
 # try:
 #     _create_unverified_https_context = ssl._create_unverified_context
@@ -16,9 +17,9 @@ from nltk import pos_tag
 # nltk.download()
 
 def main():
+    i = 0
     try:
         resrultSent = []
-        sentenceArray = []
         #ThermalPaperList_org(1464693)-1
         # 파일 읽기 -----------------------------------------------------
         with open('/Users/atec/Desktop/hansol_crawling/trainData/ThermalPaperList(688).csv', encoding='ISO-8859-1') as csvfile:
@@ -69,18 +70,24 @@ def main():
                 # WRB: Wh - adverb
                 tokenized_doc = word_tokenize(clean_doc.lower())   # tokenized_doc : ['an', 'image', 'forming']
                 tagged_doc = pos_tag(tokenized_doc) # tagged_doc : [('an','DT'), ('image','NN'), ('forming','VBG')]
+                sentenceArray = []
                 for word in tagged_doc:
-                    if word[1][0] == "N" or word[1][0] == "V":
+                    if word[1][0] == "N": #if word[1][0] == "N" or word[1][0] == "V":
                         sentenceArray.append(word[0])
-                    resrultSent.append(sentenceArray)
-                    # print('================')
-                    # print(resrultSent)
+                resrultSent.append(sentenceArray)
+                i +=1
+                print(i)
+
+
 
             # model 만들기 -----------------------------------------------------
-            print('====== 모델 만들기 시작 ======')
+            print(resrultSent)
+            print(datetime.now())
+            print('====== word2vec 모델 만들기 시작 ======')
             model = gensim.models.Word2Vec(resrultSent, iter=10, min_count=1, size=300)
-            model.save('/Users/atec/Desktop/hansol_crawling/model/word2vec20190503.model')
+            model.save('/Users/atec/Desktop/hansol_crawling/model/word2vec_20190503.model')
             print('====== word2vec 모델 생성 완료 ======')
+            print(datetime.now())
 
             # word2vec 실행 -----------------------------------------------------
             # train.py로 이동

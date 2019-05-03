@@ -20,7 +20,7 @@ CLEAN_TITLE_FILE = 'cleanRankingNews_merge.txt'
 
 def main():
     try:
-        cleanData = open('/Users/atec/Desktop/hansol_crawling/' + CLEAN_TITLE_FILE, 'r')  # read file
+        cleanData = open('/Users/atec/Desktop/hansol_crawling/trainData/' + CLEAN_TITLE_FILE, 'r')  # read file
         sentenceArray = []
         for sent in cleanData:
             tokens_sent = okt.nouns(sent)

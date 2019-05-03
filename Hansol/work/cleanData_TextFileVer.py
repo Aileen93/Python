@@ -5,7 +5,7 @@
 from konlpy.tag import Okt; okt = Okt()
 import re
 
-PROJECT_PATH = '/Users/atec/Desktop/hansol_crawling/'
+PROJECT_PATH = '/Users/atec/Desktop/hansol_crawling/trainData/'
 target_year = '2018'
 
 def flat(content):

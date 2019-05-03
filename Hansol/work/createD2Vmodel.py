@@ -21,7 +21,7 @@ def main():
         sentenceArray = []
         #ThermalPaperList_org(1464693)-1
         # 파일 읽기 -----------------------------------------------------
-        with open('/Users/atec/Desktop/hansol_crawling/patstat_data/ThermalPaperListTest.csv', encoding='ISO-8859-1') as csvfile:
+        with open('/Users/atec/Desktop/hansol_crawling/trainData/ThermalPaperList(688).csv', encoding='ISO-8859-1') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 doc = row['APPLN_ABSTRACT'] #컬럼 이름으로 가져오기
@@ -75,7 +75,7 @@ def main():
 
             # model 만들기 -----------------------------------------------------
             model = gensim.models.Doc2Vec(doc, vector_size=5, window=2, min_count=1, workers=4)
-            model.save('/Users/atec/Desktop/hansol_crawling/patstat_data/doc2vec20190503.model')
+            model.save('/Users/atec/Desktop/hansol_crawling/model/doc2vec20190503.model')
 
             # doc2vec 실행 -----------------------------------------------------
             # train.py로 이동

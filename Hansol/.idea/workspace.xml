@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work/createW2Vmodel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="61" column="57" lean-forward="true" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+            <state relative-caret-position="423">
+              <caret line="87" column="91" lean-forward="true" selection-start-line="87" selection-start-column="91" selection-end-line="87" selection-end-column="91" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
               </folding>
@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -67,6 +67,10 @@
       <find>[[</find>
       <find>[</find>
       <find>IN</find>
+      <find>pos_tag</find>
+      <find>of</find>
+      <find>the</find>
+      <find>resrultSent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,19 +92,20 @@
         <option value="$PROJECT_DIR$/work/doc2vec.py" />
         <option value="$PROJECT_DIR$/work/createCorpus.py" />
         <option value="$PROJECT_DIR$/work/createCorpusExcelVer.py" />
-        <option value="$PROJECT_DIR$/Test/Test.py" />
         <option value="$PROJECT_DIR$/work/createWord2Vec.py" />
-        <option value="$PROJECT_DIR$/work/createD2Vmodel.py" />
-        <option value="$PROJECT_DIR$/work/train.py" />
         <option value="$PROJECT_DIR$/work/word2vec.py" />
+        <option value="$PROJECT_DIR$/work/cleanData_TextFileVer.py" />
+        <option value="$PROJECT_DIR$/work/createD2Vmodel.py" />
+        <option value="$PROJECT_DIR$/Test/Test.py" />
         <option value="$PROJECT_DIR$/work/createW2Vmodel.py" />
+        <option value="$PROJECT_DIR$/work/train.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="631" />
-    <option name="y" value="98" />
-    <option name="width" value="1746" />
+    <option name="x" value="1090" />
+    <option name="y" value="130" />
+    <option name="width" value="1356" />
     <option name="height" value="1271" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -109,22 +114,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Hansol" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hansol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hansol" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hansol" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -136,6 +125,27 @@
               <item name="Hansol" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Documents/GitHub/Python/Hansol" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="DataCrawling" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Hansol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hansol" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hansol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hansol" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hansol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hansol" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -178,7 +188,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.createCorpusExcelVer">
+  <component name="RunManager" selected="Python.train">
     <configuration name="NaverNews" type="PythonConfigurationType" factoryName="Python">
       <module name="Hansol" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -307,11 +317,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.createCorpusExcelVer" />
-        <item itemvalue="Python.word2vec" />
         <item itemvalue="Python.train" />
-        <item itemvalue="Python.createD2Vmodel" />
+        <item itemvalue="Python.createCorpusExcelVer" />
         <item itemvalue="Python.Test" />
+        <item itemvalue="Python.word2vec" />
+        <item itemvalue="Python.createD2Vmodel" />
       </list>
     </recent_temporary>
   </component>
@@ -329,21 +339,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="631" y="98" width="1746" height="1271" extended-state="0" />
+    <frame x="1090" y="130" width="1356" height="1271" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73170733" visible="true" weight="0.20422535" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73170733" visible="true" weight="0.20243531" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.2682927" side_tool="true" visible="true" weight="0.20422535" />
+      <window_info id="Favorites" order="2" sideWeight="0.2682927" side_tool="true" weight="0.20422535" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49878347" weight="0.32987553" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7007042" visible="true" weight="0.3740458" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6981268" weight="0.39864293" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.88584477" visible="true" weight="0.3740458" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6971831" weight="0.39864293" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32987553" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.29929578" side_tool="true" visible="true" weight="0.3740458" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49941313" weight="0.32909244" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.11415525" side_tool="true" visible="true" weight="0.3740458" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49900463" weight="0.32978722" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -396,11 +407,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/model">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1975" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/work/model" />
     <entry file="file://$PROJECT_DIR$/DataCrawling/NaverNews.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-862">
@@ -418,54 +425,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/doc2vec.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/work/doc2vec.py" />
     <entry file="file://$PROJECT_DIR$/work/cleanData_TextFileVer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="315">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/createD2Vmodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="52" column="42" lean-forward="true" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-299">
+          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/word2vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="308">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
           <folding>
             <element signature="e#172#185#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/work/createW2Vmodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="61" column="57" lean-forward="true" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+        <state relative-caret-position="423">
+          <caret line="87" column="91" lean-forward="true" selection-start-line="87" selection-start-column="91" selection-end-line="87" selection-end-column="91" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
           </folding>
