@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 import csv
-import ssl
-import nltk
 import re
 import gensim
 from nltk.tokenize import word_tokenize
@@ -72,13 +70,11 @@ def main():
                 tagged_doc = pos_tag(tokenized_doc) # tagged_doc : [('an','DT'), ('image','NN'), ('forming','VBG')]
                 sentenceArray = []
                 for word in tagged_doc:
-                    if word[1][0] == "N": #if word[1][0] == "N" or word[1][0] == "V":
+                    if word[1][0] not in ('C','D','I','V','J','L','M','R','W'):
                         sentenceArray.append(word[0])
                 resrultSent.append(sentenceArray)
                 i +=1
                 print(i)
-
-
 
             # model 만들기 -----------------------------------------------------
             print(resrultSent)
@@ -86,6 +82,7 @@ def main():
             print('====== word2vec 모델 만들기 시작 ======')
             model = gensim.models.Word2Vec(resrultSent, iter=10, min_count=1, size=300)
             model.save('/Users/atec/Desktop/hansol_crawling/model/word2vec_20190503.model')
+            model.init_sims(replace=True) #학습 완료 후, 필요없는 메모리 unload
             print('====== word2vec 모델 생성 완료 ======')
             print(datetime.now())
 
