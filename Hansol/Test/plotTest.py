@@ -1,6 +1,3 @@
-
-# uncomment if gensim is installed
-# !pip install gensim
 import gensim
 import pandas as pd
 from sklearn.manifold import TSNE
@@ -8,26 +5,16 @@ import matplotlib.pyplot as plt
 # --------------------------------------------
 #           word2vec
 # --------------------------------------------
-# model = gensim.models.Word2Vec.load('/Users/atec/Desktop/hansol_crawling/model/word2vec.model')
-# print(model.most_similar(positive=['학생']))
-
-# --------------------------------------------
-# "Thermal Paper" word2vec
-# --------------------------------------------
 model = gensim.models.Word2Vec.load('/Users/atec/Desktop/hansol_crawling/model/word2vec_20190516_org.model')
 most_silmilar_word = model.most_similar(positive=['thermal', 'paper'], topn=500)
 print(most_silmilar_word) #단어와 가장 가까운 단어
 print('=========================1')
-#
 
-# print(model.wv.vocab)
-# vocab = list(model.wv.vocab)
-vocab = list(most_silmilar_word)
+vocab = list(model.wv.vocab)
 X = model[vocab]
 print('=========================2')
 
-# 2차원
-tsne = TSNE(n_components=2)
+tsne = TSNE(n_components=2) # 2차원
 X_tsne = tsne.fit_transform(X)
 print('=========================3')
 
@@ -43,10 +30,10 @@ ax = fig.add_subplot(1, 1, 1)
 ax.scatter(df['x'], df['y'])
 
 for word, pos in df.iterrows():
+    print(word)
+    print(pos)
     ax.annotate(word, pos, fontsize=8)
+
 plt.show()
 print('=========================5')
 
-# --------------------------------------------
-#           doc2vec
-# --------------------------------------------
