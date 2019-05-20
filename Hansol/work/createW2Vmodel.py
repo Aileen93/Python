@@ -18,13 +18,15 @@ def main():
     i = 0
     try:
         resrultSent = []
-        #ThermalPaperList_org(1464693)-1
+        # ThermalPaperList(688)
+        # 1970s 1980s 1990s 2000s 2010s
         # 파일 읽기 -----------------------------------------------------
-        with open('/Users/atec/Desktop/hansol_crawling/trainData/ThermalPaperList(688).csv', encoding='ISO-8859-1') as csvfile:
-            reader = csv.DictReader(csvfile)
-            for row in reader:
-                doc = row['APPLN_ABSTRACT'] #컬럼 이름으로 가져오기
-                clean_doc = re.sub('[^0-9a-zA-Z\\s]', '', doc.strip())  # 문장 특수문자 제거 전처리
+
+        with open('/Users/atec/Desktop/hansol_crawling/trainData/2010s.csv', encoding='utf-8-sig', newline='') as csvfile:
+            reader = csv.reader(csvfile) # DictReader
+            for line in reader:
+                # doc = row['APPLN_ABSTRACT'] #컬럼 이름으로 가져오기 -- ThermalPaperList(688) 파일만
+                clean_doc = re.sub('[^0-9a-zA-Z\\s]', '', line[0])  # 문장 특수문자 제거 전처리
 
                 # CC: Coordinating conjunction
                 # CD: Cardinal number
@@ -70,8 +72,8 @@ def main():
                 tagged_doc = pos_tag(tokenized_doc) # tagged_doc : [('an','DT'), ('image','NN'), ('forming','VBG')]
                 sentenceArray = []
                 for word in tagged_doc:
-                    if word[1][0] not in ('C','D','I','V','J','L','M','R','W'):
-                    # if word[1] in ('NN','NNS','NNP','NNPS','SYM','FW'):
+                    if word[1][0] not in ('C','D','I','V','J','L','M','R','W'): #org
+                    # if word[1] in ('NN','NNS','NNP','NNPS','SYM','FW'): new
                         sentenceArray.append(word[0])
                 resrultSent.append(sentenceArray)
                 i +=1
@@ -82,7 +84,7 @@ def main():
             print(datetime.now())
             print('====== word2vec 모델 만들기 시작 ======')
             model = gensim.models.Word2Vec(resrultSent, iter=10, min_count=1, size=300)
-            model.save('/Users/atec/Desktop/hansol_crawling/model/word2vec_20190516_org.model')
+            model.save('/Users/atec/Desktop/hansol_crawling/model/w2v_2010s.model')
             model.init_sims(replace=True) #학습 완료 후, 필요없는 메모리 unload
             print('====== word2vec 모델 생성 완료 ======')
             print(datetime.now())
