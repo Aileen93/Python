@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/createW2Vmodel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="118">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
               </folding>
@@ -26,12 +26,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/train.py">
+        <entry file="file://$PROJECT_DIR$/DataCrawling/NaverNews.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
+            <state relative-caret-position="311">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
               <folding>
-                <element signature="e#58#71#0" expanded="true" />
+                <element signature="e#159#168#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +40,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test/split.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -57,37 +66,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>103</find>
-      <find>ranking_103</find>
-      <find>section_list_ranking</find>
-      <find>df</find>
-      <find>file</find>
-      <find>sentences_list</find>
-      <find>CLEAN_TITLE_FILE</find>
-      <find>RESULT_FILE_NAME</find>
-      <find>target_year</find>
-      <find>tokens_sent</find>
-      <find>flat</find>
-      <find>]]</find>
-      <find>VBG</find>
-      <find>disclosed</find>
-      <find>[[</find>
-      <find>[</find>
-      <find>IN</find>
-      <find>pos_tag</find>
-      <find>of</find>
-      <find>the</find>
-      <find>resrultSent</find>
+      <find>&quot;</find>
+      <find>&lt;</find>
       <find>TO</find>
-      <find>reacts</find>
-      <find>sensor</find>
-      <find>cjpoin</find>
-      <find>''</find>
-      <find>'</find>
-      <find>cjponcipi</find>
-      <find>cjpo</find>
-      <find>cjpoinpit</find>
+      <find>VB</find>
+      <find>feeding</find>
+      <find>presenceabsence</find>
+      <find>RB</find>
+      <find>VBZ</find>
+      <find>VBP</find>
+      <find>VBG</find>
+      <find>VBD</find>
+      <find>VP</find>
+      <find>Data</find>
+      <find>Recording</find>
+      <find>VBN</find>
+      <find>NN</find>
+      <find>빈도수</find>
+      <find>printing</find>
+      <find>typeprinting</find>
+      <find>automatic</find>
+      <find>type</find>
+      <find>roll</find>
+      <find>sheet</find>
+      <find>double-</find>
+      <find>from gensim import parsing</find>
+      <find>Printer</find>
+      <find>Printe</find>
+      <find>Prin</find>
+      <find>sh</find>
+      <find>count</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -117,15 +129,16 @@
         <option value="$PROJECT_DIR$/Test/plot1.py" />
         <option value="$PROJECT_DIR$/Test/plotTest.py" />
         <option value="$PROJECT_DIR$/work/createW2Vmodel.py" />
+        <option value="$PROJECT_DIR$/Test/count.py" />
         <option value="$PROJECT_DIR$/work/train.py" />
         <option value="$PROJECT_DIR$/Test/split.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="219" />
+    <option name="x" value="864" />
     <option name="y" value="23" />
-    <option name="width" value="1312" />
+    <option name="width" value="2085" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -145,6 +158,11 @@
               <item name="Hansol" type="b2602c69:ProjectViewProjectNode" />
               <item name="Hansol" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Hansol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hansol" type="462c0819:PsiDirectoryNode" />
+              <item name="trainResult" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Hansol" type="b2602c69:ProjectViewProjectNode" />
@@ -177,7 +195,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/work" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -208,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.split">
+  <component name="RunManager" selected="Python.train">
     <configuration name="NaverNews" type="PythonConfigurationType" factoryName="Python">
       <module name="Hansol" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -230,6 +248,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="count" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Hansol" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/count.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="createCorpusExcelVer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Hansol" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -243,27 +282,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work/createW2Vmodel.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="plot1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Hansol" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/plot1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -337,11 +355,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.split" />
         <item itemvalue="Python.train" />
+        <item itemvalue="Python.split" />
+        <item itemvalue="Python.count" />
         <item itemvalue="Python.createCorpusExcelVer" />
         <item itemvalue="Python.plotTest" />
-        <item itemvalue="Python.plot1" />
       </list>
     </recent_temporary>
   </component>
@@ -359,15 +377,36 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="219" y="23" width="1312" height="1417" extended-state="0" />
+    <frame x="864" y="23" width="2085" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73170733" visible="true" weight="0.21259843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.73170733" visible="true" weight="0.11404797" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.2682927" side_tool="true" weight="0.20422535" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49878347" weight="0.32987553" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.88584477" visible="true" weight="0.63773584" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8453255" visible="true" weight="0.4581132" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6971831" weight="0.39773586" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49941313" weight="0.32909244" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.1546745" side_tool="true" visible="true" weight="0.4581132" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49900463" weight="0.32978722" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" weight="0.3296808" />
+      <window_info anchor="right" id="R Packages" order="4" weight="0.3296808" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73170733" visible="true" weight="0.18907563" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.2682927" side_tool="true" weight="0.20422535" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49878347" weight="0.32987553" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.88584477" visible="true" weight="0.08981132" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6971831" weight="0.39841896" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -381,7 +420,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Test.py" />
@@ -401,13 +440,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/model" />
-    <entry file="file://$PROJECT_DIR$/DataCrawling/NaverNews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-862">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataCrawling/NaverRankingNews.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -419,74 +451,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/doc2vec.py" />
-    <entry file="file://$PROJECT_DIR$/work/cleanData_TextFileVer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/createD2Vmodel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299">
-          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/word2vec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="e#172#185#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/courpusTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#212#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/dateTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/morpyTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#47#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/cv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/work/cv" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/sre_parse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -510,15 +475,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/gensim/models/base_any2vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="1390" column="16" selection-start-line="1390" selection-start-column="16" selection-end-line="1390" selection-end-column="16" />
+        <state relative-caret-position="418">
+          <caret line="1390" column="8" selection-start-line="1390" selection-start-column="8" selection-end-line="1390" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/createD2Vmodel.py" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/nltk/tokenize/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="127" column="4" selection-start-line="127" selection-start-column="4" selection-end-line="127" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="e#172#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/cleanData_TextFileVer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/morpyTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="15" lean-forward="true" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+          <folding>
+            <element signature="e#47#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/plot1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state relative-caret-position="90">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -527,38 +527,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/plotTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+        <state relative-caret-position="-28">
+          <caret line="8" column="77" lean-forward="true" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/dateTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/courpusTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
-            <element signature="e#58#71#0" expanded="true" />
+            <element signature="e#212#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/createW2Vmodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="118">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DataCrawling/NaverNews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="e#159#168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/work/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
-          <folding>
-            <element signature="e#58#71#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/split.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>

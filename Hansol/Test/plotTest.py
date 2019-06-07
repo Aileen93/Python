@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # --------------------------------------------
 #           word2vec
 # --------------------------------------------
-model = gensim.models.Word2Vec.load('/Users/atec/Desktop/hansol_crawling/model/word2vec_20190519_org.model')
+model = gensim.models.Word2Vec.load('/Users/atec/Desktop/hansol_crawling/model/w2v_thermalPaperList(688).model')
 most_silmilar_word = model.most_similar(positive=['user', 'paper'], topn=500)
 print(most_silmilar_word) #단어와 가장 가까운 단어
 print('=========================1')
